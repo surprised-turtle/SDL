@@ -3306,6 +3306,9 @@
 		AAC07105195606770073DCDF /* SDL_opengles2_khrplatform.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC070F8195606770073DCDF /* SDL_opengles2_khrplatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AAC07107195606770073DCDF /* SDL_opengles2_khrplatform.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC070F8195606770073DCDF /* SDL_opengles2_khrplatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AADA5B8716CCAB3000107CF7 /* SDL_bits.h in Headers */ = {isa = PBXBuildFile; fileRef = AADA5B8616CCAB3000107CF7 /* SDL_bits.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C31B41C528064837006ADB72 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C31B41C428064837006ADB72 /* main.cpp */; };
+		C31B41CE2806488E006ADB72 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BECDF66C0761BA81005FE872 /* SDL2.framework */; };
+		C31B41CF2806488E006ADB72 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BECDF66C0761BA81005FE872 /* SDL2.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DB0F489317C400E6008798C5 /* SDL_messagebox.h in Headers */ = {isa = PBXBuildFile; fileRef = AA9FF9591637CBF9000DF050 /* SDL_messagebox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB0F490C17CA57ED008798C5 /* SDL_filesystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 567E2F2017C44C35005F1892 /* SDL_filesystem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB313FC817554B71006C0E22 /* begin_code.h in Headers */ = {isa = PBXBuildFile; fileRef = AA7557C71595D4D800BBD41B /* begin_code.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -3515,6 +3518,13 @@
 			remoteGlobalIDString = BECDF5FE0761BA81005FE872;
 			remoteInfo = "Framework (Upgraded)";
 		};
+		C31B41CB28064865006ADB72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BECDF5FE0761BA81005FE872;
+			remoteInfo = Framework;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -3544,6 +3554,26 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C31B41C028064837006ADB72 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		C31B41D02806488E006ADB72 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C31B41CF2806488E006ADB72 /* SDL2.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3976,6 +4006,8 @@
 		BECDF66C0761BA81005FE872 /* SDL2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDL2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECDF6B30761BA81005FE872 /* libSDL2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSDL2.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECDF6BE0761BA81005FE872 /* SDL2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SDL2; sourceTree = BUILT_PRODUCTS_DIR; };
+		C31B41C228064837006ADB72 /* Game Controller Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Game Controller Test"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C31B41C428064837006ADB72 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		DB31407717554B71006C0E22 /* libSDL2.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libSDL2.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		F376F6182559B29300CFC0BC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.1.sdk/System/Library/Frameworks/OpenGLES.framework; sourceTree = DEVELOPER_DIR; };
 		F376F61A2559B2AF00CFC0BC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/iOSSupport/System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -4137,6 +4169,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C31B41BF28064837006ADB72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C31B41CE2806488E006ADB72 /* SDL2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DB31406B17554B71006C0E22 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -4247,6 +4287,7 @@
 				A769B23D23E259AE00872273 /* libSDL2.a */,
 				A75FCEB323E25AB700529352 /* libSDL2.dylib */,
 				A75FD06C23E25AC700529352 /* libSDL2.dylib */,
+				C31B41C228064837006ADB72 /* Game Controller Test */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4258,6 +4299,7 @@
 				F59C70FC00D5CB5801000001 /* pkg-support */,
 				0153844A006D81B07F000001 /* Public Headers */,
 				08FB77ACFE841707C02AAC07 /* Library Source */,
+				C31B41C328064837006ADB72 /* Game Controller Test */,
 				034768DDFF38A45A11DB9C8B /* Products */,
 				BECDF66B0761BA81005FE872 /* Info-Framework.plist */,
 				564624341FF821B70074AC87 /* Frameworks */,
@@ -5179,6 +5221,14 @@
 				A7D8A92F23E2514000DCD162 /* SDL_windowevents.c */,
 			);
 			path = events;
+			sourceTree = "<group>";
+		};
+		C31B41C328064837006ADB72 /* Game Controller Test */ = {
+			isa = PBXGroup;
+			children = (
+				C31B41C428064837006ADB72 /* main.cpp */,
+			);
+			path = "Game Controller Test";
 			sourceTree = "<group>";
 		};
 		F3ADAB8C2576F08500A6B1D9 /* ios */ = {
@@ -7252,6 +7302,25 @@
 			productReference = BECDF6BE0761BA81005FE872 /* SDL2 */;
 			productType = "com.apple.product-type.tool";
 		};
+		C31B41C128064837006ADB72 /* Game Controller Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C31B41C628064837006ADB72 /* Build configuration list for PBXNativeTarget "Game Controller Test" */;
+			buildPhases = (
+				C31B41BE28064837006ADB72 /* Sources */,
+				C31B41BF28064837006ADB72 /* Frameworks */,
+				C31B41C028064837006ADB72 /* CopyFiles */,
+				C31B41D02806488E006ADB72 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C31B41CC28064865006ADB72 /* PBXTargetDependency */,
+			);
+			name = "Game Controller Test";
+			productName = "Game Controller Test";
+			productReference = C31B41C228064837006ADB72 /* Game Controller Test */;
+			productType = "com.apple.product-type.tool";
+		};
 		DB313F7217554B71006C0E22 /* Shared Library */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB31407417554B71006C0E22 /* Build configuration list for PBXNativeTarget "Shared Library" */;
@@ -7279,6 +7348,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1130;
+				TargetAttributes = {
+					C31B41C128064837006ADB72 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
 			};
 			buildConfigurationList = 0073178E0858DB0500B2BC32 /* Build configuration list for PBXProject "SDL" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -7304,6 +7378,7 @@
 				A75FCCFB23E25AB700529352 /* Shared Library-iOS */,
 				A75FCEB423E25AC700529352 /* Shared Library-tvOS */,
 				BECDF6BB0761BA81005FE872 /* Standard DMG */,
+				C31B41C128064837006ADB72 /* Game Controller Test */,
 			);
 		};
 /* End PBXProject section */
@@ -8890,6 +8965,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C31B41BE28064837006ADB72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C31B41C528064837006ADB72 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DB313FFD17554B71006C0E22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -9082,6 +9165,11 @@
 			isa = PBXTargetDependency;
 			target = BECDF5FE0761BA81005FE872 /* Framework */;
 			targetProxy = BECDF6C50761BA81005FE872 /* PBXContainerItemProxy */;
+		};
+		C31B41CC28064865006ADB72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BECDF5FE0761BA81005FE872 /* Framework */;
+			targetProxy = C31B41CB28064865006ADB72 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -9405,6 +9493,66 @@
 			};
 			name = Release;
 		};
+		C31B41C728064837006ADB72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C31B41C828064837006ADB72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		DB31407517554B71006C0E22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -9512,6 +9660,15 @@
 			buildConfigurations = (
 				A7D88E5223E24D3B00DCD162 /* Debug */,
 				A7D88E5323E24D3B00DCD162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C31B41C628064837006ADB72 /* Build configuration list for PBXNativeTarget "Game Controller Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C31B41C728064837006ADB72 /* Debug */,
+				C31B41C828064837006ADB72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
